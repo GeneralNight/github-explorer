@@ -1,0 +1,106 @@
+.repoList {
+    padding: 40px;
+
+    .loading {
+        font-size: 1.25rem;
+        margin-top: 30px;
+        color: #00888d;
+        font-weight: 700;
+    }
+
+    .inputGroup {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        align-items: flex-start;
+        margin-top: 10px;
+        row-gap: 5px;
+
+        .searchBox {
+            display: flex;
+            align-items: stretch;
+            column-gap: 15px;
+    
+            input {
+                border: none;
+                font-size: 1.15rem;
+                border-radius: 5px;
+                padding: 5px 10px;
+                outline: none;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+
+                &:read-only {
+                    filter: brightness(.95);
+                }
+            }
+
+            .cleanSearch {
+                border:  none;
+                padding: 5px 10px;
+                background: #00888d;
+                color: #ffffff;
+                border-radius: 3px;
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 1rem;
+                transition: .2s;
+                &:hover {
+                    background: #000625;
+                }
+            }
+        }
+    }
+
+    .alertMsg {
+        margin-top: 30px;
+        background: #f3a1a1;
+        color: rgb(158, 25, 25);
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: 700;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    }
+    
+    
+
+    ul {
+        margin-top: 30px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+
+        li {
+            width: calc(50% - 30px);
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            background: linear-gradient(270.9deg, #005271 -3.83%, #000625 110.81%);
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+            strong {
+                font-size: 1.25rem;
+            }
+
+            a {
+                width: fit-content;
+                background: linear-gradient(270.9deg, #00888d -3.83%, #005271 110.81%);
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+                border-radius: 5px;
+                padding: 10px 15px;
+                color: #ffffff;
+                text-decoration: none;
+                transition: .2s;
+
+                &:hover {
+                    filter: brightness(.9);
+                }
+            }
+        }
+    }
+}
+

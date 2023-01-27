@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px "Helvetica Neue", Arial, sans-serif;
+    color: #121214;
+    background: #f6f6f6;
+}
+
+.loader {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 5px #00888d solid;
+    border-right-color: transparent;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0%{transform:rotateZ(0deg)}
+    100%{transform:rotateZ(360deg)}
+}
+
